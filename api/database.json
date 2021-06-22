@@ -1,0 +1,22 @@
+{
+  "reservations": [
+    {
+      "id": 1,
+      "parent": "Ging",
+      "child": "Gon",
+      "partySize": 2,
+      "address": "1234 Hunter Ln",
+      "date": "2021-08-71",
+      "hours": "3"
+    },
+    {
+      "parent": "K",
+      "child": "k",
+      "partySize": "1",
+      "address": "k",
+      "date": "2021-06-09",
+      "hours": "1",
+      "id": 2
+    }
+  ]
+}
