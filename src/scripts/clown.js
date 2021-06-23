@@ -9,7 +9,7 @@ export const buttonsClown = () => {
         </section>
 
         <section class="serviceRequests">
-            <h2>Make a Reservation</h2>
+            <h2>Scheduled Reservations</h2>
             ${Reservations()}
             </section>
     `

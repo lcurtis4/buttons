@@ -15,7 +15,7 @@ export const fetchReservations = () => {
 }
 
 export const getReservations = () => {
-    return applicationState.reservations.map(reservation => ({reservation}))
+    return applicationState.reservations.map(reservation => ({...reservation}))
 }
 
 export const sendReservation = (userServiceRequest) => {
@@ -35,5 +35,17 @@ export const sendReservation = (userServiceRequest) => {
         mainContainer.dispatchEvent(new CustomEvent("stateChanged"))
 
     })
+}
+
+export const deleteReservation = (id) => {
+    
+    const mainContainer = document.querySelector("#container");
+
+    return fetch(`${API}/reservations/${id}`, { method: "DELETE" })
+        .then(
+            () => {
+                mainContainer.dispatchEvent(new CustomEvent("stateChanged"))
+            }
+        )
 }
 
